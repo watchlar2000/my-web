@@ -1,0 +1,145 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./variables.css');
+
+body {
+  color: var(--color-global-text);
+  background-color: var(--color-global-bg);
+  letter-spacing: var(--kerning);
+  font-family: var(--font-base);
+  overflow-x: hidden;
+  font-size: 100%;
+  line-height: var(--leading);
+  font-size-adjust: from-font;
+  min-height: unset;
+  margin: 0;
+}
+
+.body-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'lm header rm'
+    'lm main rm'
+    'lm footer rm';
+  grid-template-columns:
+    minmax(1rem, 1fr) min(1360px, calc(100vw - 4rem))
+    minmax(1rem, 1fr);
+  grid-template-rows: auto 1fr auto;
+}
+
+:is(h1, h2, h3, h4) {
+  line-height: var(--leading-fine);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-5);
+  max-width: var(--size-text-max-width);
+}
+
+h2 {
+  font-size: var(--step-4);
+  max-width: var(--size-text-max-width);
+}
+
+h3 {
+  font-size: var(--step-3);
+  max-width: var(--size-text-max-width);
+}
+
+:is(h1, h2, h3) {
+  font-weight: 600;
+}
+
+:is(h4, h5, h6) {
+  font-size: var(--step-2);
+}
+
+ul:not([class]) {
+  padding-inline-start: 1.7ch;
+  list-style-type: disc;
+}
+
+ul:not([class]) > li {
+  padding-inline-start: var(--space-xs);
+}
+
+ul ::marker {
+  font-size: 0.8lh;
+}
+
+ol ::marker {
+  font-size: 1em;
+  font-weight: var(--font-bold);
+}
+
+[role='list'][class],
+[role='tablist'][class] {
+  margin-block: 0;
+  padding: 0;
+}
+
+:is(a) {
+  text-underline-offset: 0.15lh;
+  text-decoration-thickness: 0.2ex;
+  transition: color 0.1s ease-in;
+}
+
+:is(a):hover {
+  text-decoration-color: var(--color-primary);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px dashed var(--focus-color, var(--color-accent));
+  outline-offset: var(--focus-offset, 0.25rem);
+}
+
+/* Firefox is the only browser that doesn't outline the whole element unless you make it display: inline-block. That in itself causes multiple flow issues so we can detect it, using its own vendor prefix and reduce focus offset
+*/
+@supports (-moz-appearance: none) {
+  :root {
+    --focus-offset: 0.08em;
+  }
+}
+
+:target {
+  scroll-margin-block: 5lh;
+}
+
+::selection {
+  background: var(--color-global-text);
+  color: var(--color-global-bg);
+}
+
+hr {
+  border: none;
+  border-block-start: var(--stroke);
+  margin-block: var(--flow-space, var(--space-xl));
+}
+
+svg[class~='icon'] {
+  width: auto;
+  max-width: 1lh;
+  height: 1lh;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+svg[role='img'][width][height] {
+  width: revert;
+  height: revert;
+  background: var(--color-light);
+  padding: var(--space-xs);
+}
+
+/* There's a .flow composition, but this prevents forms from having to have that applied where markup is harder to control in certain systems. It still uses the --flow-space variables though to make managing space easier */
+form > * + * {
+  margin-top: var(--flow-space, 0.5rem);
+}
