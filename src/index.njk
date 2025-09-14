@@ -1,0 +1,55 @@
+---
+layout: base.njk
+title: "Home"
+---
+
+<div class="cards-grid">
+  <div class="card card-about">
+    <div class="wrapper flow" data-wrapper-type='inner'>
+      <h2>about</h2>
+      <div class="flow | card-content">
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua.
+        </p>
+        <a href="/about" class="card-link">
+          <span class="visually-hidden">About page</span>
+          {% icon "fa:arrow-right" %}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card card-now">
+    <div class="wrapper flow" data-wrapper-type='inner'>
+      <h2>now</h2>
+      <div class="flow | card-content">
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <a href="/now" class="card-link">
+          <span class="visually-hidden">Now page</span>
+          {% icon "fa:arrow-right" %}
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card card-projects">
+    <div class="wrapper" data-wrapper-type='inner'>
+      <div class="flow">
+        <h2 class="text-break">projects</h2>
+        <div class="card-content">
+          <ul>
+            <li>Project 1</li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+          </ul>
+        </div>
+      </div>
+      <a href="/projects" class="card-link">
+        <span class="visually-hidden">Projects page</span>
+        {% icon "fa:arrow-right" %}
+      </a>
+    </div>
+  </div>
+  <div class="show-desktop-up | card card-empty"></div>
+</div>
