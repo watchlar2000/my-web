@@ -1,0 +1,33 @@
+{
+  "name": "my-web",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "prepare": "husky",
+    "lint": "eslint \"**/*.{js,mjs,cjs,ts,tsx}\"",
+    "lint:fix": "eslint \"**/*.{js,mjs,cjs,ts,tsx}\" --fix",
+    "format": "prettier --write \"**/*.{js,mjs,cjs,ts,tsx,json,md,yml,yaml,css,html,njk}\""
+  },
+  "keywords": [],
+  "author": "Sergiuzh Kochetov",
+  "license": "MIT",
+  "packageManager": "pnpm@10.4.1",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+    "*.{js,mjs,cjs,json,md,yml,yaml,css,html,njk}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@11ty/font-awesome": "1.0.0-beta.1"
+  }
+}
