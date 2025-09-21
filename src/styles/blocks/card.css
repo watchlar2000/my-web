@@ -8,6 +8,17 @@
   animation: organic-weave 35s ease-in-out infinite alternate;
 }
 
+.card:not(.card-decoration) {
+  display: grid;
+  grid-template-rows: var(--space-xl) 1fr auto;
+  gap: var(--space-l);
+  height: 100%;
+}
+
+.card:last-child {
+  margin-top: auto;
+}
+
 /* @keyframes organic-weave {
   0% {
     border-radius: var(--radius-l) var(--radius-l) var(--radius-xl)
@@ -80,51 +91,6 @@
   max-width: 30rem;
 }
 
-.card-projects .wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.card-projects .wrapper {
-  /* gap: var(--space-xs); */
-}
-
-/* .card-projects .card-link {
-  margin-top: auto;
-} */
-
-.card-now .wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.card-now .wrapper {
-  /* gap: var(--space-xs); */
-}
-
-/* .card-now .card-link {
-  margin-top: auto;
-} */
-
-.card-about .wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.card-about .wrapper {
-  /* gap: var(--space-xs); */
-}
-
-/* .card-about .card-link {
-  margin-top: auto;
-} */
-
 @media (prefers-reduced-motion: reduce) {
   .card,
   .card-link,
@@ -148,14 +114,7 @@
   position: relative;
   font-size: var(--text-size-heading-5);
   color: var(--color-card-heading);
-  /* margin-left: var(--space-xs); */
 }
-
-/* .project-item__title::before {
-  position: absolute;
-  left: calc(var(--space-xs) * -1);
-  content: '•';
-} */
 
 .project-item__tags {
   --gutter: var(--space-xs);
@@ -178,6 +137,7 @@
   place-content: center;
   padding: var(--space-s-m);
   background-color: var(--color-primary-subtle);
+  height: 100%;
 
   & img {
     width: clamp(10rem, 20vw, 15rem);

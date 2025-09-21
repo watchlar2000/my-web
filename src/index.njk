@@ -4,60 +4,52 @@ title: "Home"
 ---
 
 <div class="cards-grid">
-  <div class="wrapper flow | card card-about " data-wrapper-type="inner">
+  <div class="wrapper | card card-about " data-wrapper-type="inner">
     <h2 class="text-break | card-title">about</h2>
-    <div class="flow-tight">
-      <p class="card-content">
-        <span>Hi there!</span>
-        I'm Sergiusz - an engineer who discovered a passion for web development. I've been freelancing and building projects for
-        a few years now. Ready to make the switch to full-time development...
-      </p>
-      <a href="/about" class="card-link">
-        <span class="visually-hidden">Go to about page to read more</span>
-        {% svg "src/images/icons/arrow-right.svg" %}
-      </a>
-    </div>
+    <p class="card-content">
+      <span>Hi there!</span>
+      I'm Sergiusz - an engineer who discovered a passion for web development. I've been freelancing and building projects for
+      a few years now. Ready to make the switch to full-time development...
+    </p>
+    <a href="/about" class="card-link">
+      <span class="visually-hidden">Go to about page to read more</span>
+      {% svg "src/images/icons/arrow-right.svg" %}
+    </a>
   </div>
-  <div class="flow wrapper | card card-now" data-wrapper-type="inner">
+  <div class="wrapper | card card-now" data-wrapper-type="inner">
     <h2 class="card-title">now</h2>
-    <div class="flow-tight">
-      <p class="card-content">
-        See what is happening in my life.
-      </p>
-      <a href="/now" class="card-link">
-        <span class="visually-hidden">Go to now page to read more</span>
-        {% svg "src/images/icons/arrow-right.svg" %}
-      </a>
-    </div>
+    <p class="card-content">
+      See what is happening in my life.
+    </p>
+    <a href="/now" class="card-link">
+      <span class="visually-hidden">Go to now page to read more</span>
+      {% svg "src/images/icons/arrow-right.svg" %}
+    </a>
   </div>
-  <div class="wrapper flow | card card-projects" data-wrapper-type="inner">
+  <div class="wrapper | card card-projects" data-wrapper-type="inner">
     <h2 class="text-break | card-title">projects</h2>
-    <div class="flow-tight">
-      <div>
-        <ul role="list" class="flow | projects-list">
-          {% set featuredProjects = collections.project %}
-          {% for project in featuredProjects %}
-            {% if project.data.featured %}
-              <li class="flow-tight | card-content project-item">
-                <a href="{{ project.url }}" class="text-break | project-item__title">{{ project.data.title }}</a>
-                <p>Personal portfolio with secure CMS.</p>
-                <div>
-                  <ul role="list" class="cluster | project-item__tags">
-                    <li>SvelteKit</li>
-                    <li>TypeScript</li>
-                    <li>Supabase</li>
-                  </ul>
-                </div>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      <a href="/projects" class="card-link">
-        <span class="visually-hidden">Go to projects page to read more</span>
-        {% svg "src/images/icons/arrow-right.svg" %}
-      </a>
-    </div>
+    <ul role="list" class="flow | projects-list">
+      {% set featuredProjects = collections.project %}
+      {% for project in featuredProjects %}
+        {% if project.data.featured %}
+          <li class="flow-tight | card-content project-item">
+            <a href="{{ project.url }}" class="text-break | project-item__title">{{ project.data.title }}</a>
+            <p>Personal portfolio with secure CMS.</p>
+            <div>
+              <ul role="list" class="cluster | project-item__tags">
+                <li>SvelteKit</li>
+                <li>TypeScript</li>
+                <li>Supabase</li>
+              </ul>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <a href="/projects" class="card-link">
+      <span class="visually-hidden">Go to projects page to read more</span>
+      {% svg "src/images/icons/arrow-right.svg" %}
+    </a>
   </div>
   <div class="flow-tight | card card-decoration">
     <div>
