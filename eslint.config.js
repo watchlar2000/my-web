@@ -5,11 +5,12 @@ export default [
   ...config,
   prettierConfig,
   {
-    // files: ['.eleventy.js', 'eleventy.config.js', '_11ty/**/*.js'],
-    // rules: {
-    //   'no-magic-numbers': 'off',
-    //   'unicorn/prefer-module': 'off',
-    // },
+    files: ['**/*.js', '.eleventy.js', 'eleventy.config.js', '_11ty/**/*.js'],
+    rules: {
+      'no-console': ['error', { allow: ['error'] }],
+      'no-magic-numbers': 'off',
+      'unicorn/prefer-module': 'off',
+    },
   },
   {
     ignores: [
