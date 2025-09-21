@@ -1,0 +1,59 @@
+.prose {
+  --flow-space: var(--space-l);
+
+  font-family: var(--font-base);
+}
+
+.prose :is(h1, h2, h3) {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  margin-inline: auto;
+  color: var(--color-card-heading);
+}
+
+.prose :is(p, li, dl, figcaption, blockquote) {
+  max-width: var(--size-text-max-width);
+  text-wrap: pretty;
+  margin-inline: auto;
+}
+
+.prose :is(img) {
+  margin-inline: auto;
+}
+
+.prose :is(figcaption) {
+  margin-top: var(--space-xs);
+  font-size: var(--text-size-lede);
+  color: var(--color-text-subtle);
+  text-align: center;
+  max-width: 15rem;
+}
+
+.prose :is(h1, h2, h3, h4) + *:not([class]) {
+  --flow-space: var(--space-m);
+}
+
+/* Add more space to headings on block start */
+.prose * + :is(h1, h2, h3, h4):not([class]) {
+  --flow-space: var(--space-xl);
+}
+
+.prose :is(ul, ol):not([class]) li + li,
+.prose :is(ul, ol):not([class]) li > :is(ol, ul) {
+  --flow-space: var(--space-xs);
+}
+
+.prose hr {
+  --flow-space: var(--space-2xl);
+}
+
+.prose :is(a):active,
+.prose :is(a):focus-visible {
+  text-decoration-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.prose img {
+  max-height: 100vh;
+  width: auto;
+}

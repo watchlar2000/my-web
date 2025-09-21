@@ -45,3 +45,11 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('/public/fonts/CrimsonPro-Light.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}

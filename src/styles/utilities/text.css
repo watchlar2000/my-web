@@ -3,3 +3,7 @@
   word-break: break-word;
   hyphens: auto;
 }
+
+.text-balance {
+  text-wrap: balance;
+}

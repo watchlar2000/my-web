@@ -1,3 +1,11 @@
 .flow > * + * {
-  margin-block-start: var(--flow-space, 1em);
+  margin-block-start: var(--flow-space, var(--space-m, 1em));
+}
+
+.flow-tight > * + * {
+  margin-block-start: var(--flow-space-tight, var(--space-xs, 0.5em));
+}
+
+.flow-loose > * + * {
+  margin-block-start: var(--flow-space-loose, var(--space-2xl, 2em));
 }

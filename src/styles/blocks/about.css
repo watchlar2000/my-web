@@ -1,0 +1,29 @@
+.welcome-grid {
+  display: grid;
+  background-color: var(--color-primary-subtle);
+  padding: var(--space-m);
+  color: var(--color-light);
+  gap: var(--space-l);
+  place-content: center;
+}
+
+@media (width > 1024px) {
+  .welcome-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.welcome-grid h2 {
+  color: var(--color-light);
+}
+
+.avatar-wrapper {
+  justify-self: center;
+  align-self: center;
+}
+
+.avatar-image {
+  justify-self: center;
+  align-self: center;
+  max-width: clamp(8rem, 20vw, 12rem);
+}

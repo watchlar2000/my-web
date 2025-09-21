@@ -5,8 +5,9 @@
 body {
   color: var(--color-global-text);
   background-color: var(--color-global-bg);
-  letter-spacing: var(--kerning);
+  letter-spacing: var(--kerning-tight);
   font-family: var(--font-base);
+  font-weight: var(--font-regular);
   overflow-x: hidden;
   font-size: 100%;
   line-height: var(--leading);
@@ -23,14 +24,15 @@ body {
     'lm main rm'
     'lm footer rm';
   grid-template-columns:
-    minmax(1rem, 1fr) min(1360px, calc(100vw - 4rem))
-    minmax(1rem, 1fr);
+    1fr min(var(--wrapper-max-width), calc(100vw - 2rem))
+    1fr;
   grid-template-rows: auto 1fr auto;
 }
 
 :is(h1, h2, h3, h4) {
   line-height: var(--leading-fine);
   text-wrap: balance;
+  font-family: var(--font-display);
 }
 
 h1 {
@@ -57,7 +59,7 @@ h3 {
 }
 
 ul:not([class]) {
-  padding-inline-start: 1.7ch;
+  padding-inline-start: 4ch;
   list-style-type: disc;
 }
 
@@ -66,7 +68,11 @@ ul:not([class]) > li {
 }
 
 ul ::marker {
-  font-size: 0.8lh;
+  font-size: 1.25lh;
+}
+
+ul ::marker {
+  font-size: 1.25lh;
 }
 
 ol ::marker {
@@ -80,14 +86,21 @@ ol ::marker {
   padding: 0;
 }
 
-:is(a) {
-  text-underline-offset: 0.15lh;
-  text-decoration-thickness: 0.2ex;
-  transition: color 0.1s ease-in;
+:is(nav a) {
+  text-decoration: none;
+  font-family: var(--font-display);
 }
 
-:is(a):hover {
-  text-decoration-color: var(--color-primary);
+:is(a:not(nav a)) {
+  text-underline-offset: 0.15lh;
+  text-decoration-thickness: 0.25ex;
+
+  &:hover {
+    --color-link-hover: var(--color-primary);
+
+    text-decoration-color: var(--color-link-hover);
+    color: var(--color-link-hover);
+  }
 }
 
 :focus {
@@ -95,15 +108,15 @@ ol ::marker {
 }
 
 :focus-visible {
-  outline: 3px dashed var(--focus-color, var(--color-accent));
-  outline-offset: var(--focus-offset, 0.25rem);
+  outline: 4px solid var(--focus-color, var(--color-accent-light));
+  outline-offset: var(--focus-offset, 0.05em);
 }
 
 /* Firefox is the only browser that doesn't outline the whole element unless you make it display: inline-block. That in itself causes multiple flow issues so we can detect it, using its own vendor prefix and reduce focus offset
 */
 @supports (-moz-appearance: none) {
   :root {
-    --focus-offset: 0.08em;
+    --focus-offset: 0.05em;
   }
 }
 
@@ -119,7 +132,7 @@ ol ::marker {
 hr {
   border: none;
   border-block-start: var(--stroke);
-  margin-block: var(--flow-space, var(--space-xl));
+  margin-block: var(--flow-space, var(--space-m));
 }
 
 svg[class~='icon'] {
