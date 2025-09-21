@@ -8,12 +8,12 @@
   </head>
   <body class="theme-colorful">
     <div class="body-grid">
-      {% include "header.njk" %}
+      {% include "partials/header.njk" %}
       <main class="main">
         {{ content | safe }}
       </main>
       {% getBundle "fontawesome" %}
-      {% include "footer.njk" %}
+      {% include "partials/footer.njk" %}
     </div>
   </body>
 </html>
