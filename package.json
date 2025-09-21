@@ -13,13 +13,8 @@
     "format": "prettier --write \"**/*.{js,mjs,cjs,ts,tsx,json,md,yml,yaml,css,html,njk}\""
   },
   "lint-staged": {
-    "**/*.{js,mjs,cjs,ts,tsx}": [
-      "pnpm run lint:fix",
-      "pnpm run format"
-    ],
-    "*.{json,md,yml,yaml,css,html,njk}": [
-      "pnpm run format"
-    ]
+    "**/*.{js,mjs,cjs,ts,tsx}": "pnpm run lint:fix",
+    "*.{json,md,yml,yaml,css,html,njk}": "pnpm run format"
   },
   "keywords": [],
   "author": "Sergiuzh Kochetov",
