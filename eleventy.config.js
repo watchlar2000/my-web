@@ -123,7 +123,10 @@ const eleventyConfig = (config) => {
 
   return {
     dir: {
+      data: '_data',
+      includes: '_includes',
       input: 'src',
+      layouts: '_layouts',
       output: '_site',
     },
     htmlTemplateEngine: 'njk',
