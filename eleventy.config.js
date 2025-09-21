@@ -18,7 +18,7 @@ const image = async (
   alt,
   className = '',
   sizes = '100vw',
-  // loading = 'lazy',
+  loading = 'lazy',
 ) => {
   try {
     const metadata = await Image(source, {
