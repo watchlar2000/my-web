@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="166.80598mm"
+   height="37.388798mm"
+   viewBox="0 0 166.80598 37.388798"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="327.07632"
+     inkscape:cy="331.75999"
+     inkscape:window-width="1400"
+     inkscape:window-height="969"
+     inkscape:window-x="582"
+     inkscape:window-y="94"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-19.798576,-14.95229)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50.8px;line-height:1.25;font-family:sans-serif;letter-spacing:-2.64583px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="18.172976"
+       y="51.52829"
+       id="text693"><tspan
+         sodipodi:role="line"
+         id="tspan691"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.8px;font-family:'Bergen Mono';-inkscape-font-specification:'Bergen Mono Bold';stroke-width:0.264583"
+         x="18.172976"
+         y="51.52829">CREATE</tspan></text>
+  </g>
+</svg>
