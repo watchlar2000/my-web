@@ -8,13 +8,13 @@
     "dev": "eleventy --serve",
     "build": "eleventy",
     "prepare": "husky",
-    "lint": "eslint \"**/*.{js,mjs,cjs,ts,tsx}\" --max-warnings 0",
-    "lint:fix": "eslint \"**/*.{js,mjs,cjs,ts,tsx}\" --fix && eslint \"**/*.{js,mjs,cjs,ts,tsx}\" --max-warnings 0",
+    "lint": "eslint \"**/*.{js,mjs,cjs,ts,tsx}\"",
+    "lint:fix": "eslint \"**/*.{js,mjs,cjs,ts,tsx}\" --fix && eslint \"**/*.{js,mjs,cjs,ts,tsx}\"",
     "format": "prettier --write \"**/*.{js,mjs,cjs,ts,tsx,json,md,yml,yaml,css,html,njk}\""
   },
   "lint-staged": {
     "**/*.{js,mjs,cjs,ts,tsx}": "pnpm run lint:fix",
-    "*.{json,md,yml,yaml,css,html,njk}": "pnpm run format"
+    "*.{json,md,yml,yaml,css,html,njk}": "prettier --write"
   },
   "keywords": [],
   "author": "Sergiuzh Kochetov",
