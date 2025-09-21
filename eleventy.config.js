@@ -1,6 +1,7 @@
-import fontAwesomePlugin from '@11ty/font-awesome';
-import Image from '@11ty/eleventy-img';
 import fs from 'node:fs';
+
+import Image from '@11ty/eleventy-img';
+import fontAwesomePlugin from '@11ty/font-awesome';
 
 const svg = (path, className = '') => {
   const svgContent = fs.readFileSync(path, 'utf8');
@@ -13,22 +14,22 @@ const svg = (path, className = '') => {
 };
 
 const image = async (
-  src,
+  source,
   alt,
   className = '',
   sizes = '100vw',
   // loading = 'lazy',
 ) => {
   try {
-    let metadata = await Image(src, {
-      widths: [300, 600, 900, 1200],
+    const metadata = await Image(source, {
       formats: ['webp', 'jpeg'],
-      urlPath: '/assets/img/generated/',
       outputDir: './_site/assets/img/generated/',
+      urlPath: '/assets/img/generated/',
+      widths: [300, 600, 900, 1200],
     });
 
-    let lowsrc = metadata.jpeg[0];
-    let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+    const lowsrc = metadata.jpeg[0];
+    const highsrc = metadata.jpeg.at(-1);
 
     return `<picture class="${className}">
       ${Object.values(metadata)
@@ -45,32 +46,31 @@ const image = async (
           alt="${alt}"
   >
     </picture>`;
-  } catch (err) {
-    console.error(`Image shortcode error for ${src}:`, err.message);
-    return `<img src="${src}" alt="${alt}">`;
+  } catch {
+    return `<img src="${source}" alt="${alt}">`;
   }
 };
 
-const themeImage = async (lightSrc, darkSrc, alt, sizes = '100vw') => {
+const themeImage = async (lightSource, darkSource, alt, sizes = '100vw') => {
   try {
     // Process both variants
     const [lightMetadata, darkMetadata] = await Promise.all([
-      Image(lightSrc, {
-        widths: [300, 600, 900, 1200],
+      Image(lightSource, {
         formats: ['webp', 'jpeg'],
-        urlPath: '/assets/img/generated/',
         outputDir: './_site/assets/img/generated/',
+        urlPath: '/assets/img/generated/',
+        widths: [300, 600, 900, 1200],
       }),
-      Image(darkSrc, {
-        widths: [300, 600, 900, 1200],
+      Image(darkSource, {
         formats: ['webp', 'jpeg'],
-        urlPath: '/assets/img/generated/',
         outputDir: './_site/assets/img/generated/',
+        urlPath: '/assets/img/generated/',
+        widths: [300, 600, 900, 1200],
       }),
     ]);
 
-    let lightLowsrc = lightMetadata.jpeg[0];
-    let lightHighsrc = lightMetadata.jpeg[lightMetadata.jpeg.length - 1];
+    const lightLowsrc = lightMetadata.jpeg[0];
+    const lightHighsrc = lightMetadata.jpeg.at(-1);
 
     return `<picture>
 ${Object.values(darkMetadata)
@@ -94,9 +94,8 @@ ${Object.values(lightMetadata)
     alt="${alt}"
     >
 </picture>`;
-  } catch (err) {
-    console.error(`Theme image error:`, err.message);
-    return `<img src="${lightSrc}" alt="${alt}">`;
+  } catch {
+    return `<img src="${lightSource}" alt="${alt}">`;
   }
 };
 
@@ -115,8 +114,8 @@ const eleventyConfig = (config) => {
   config.addPassthroughCopy('src/styles/styles.css');
 
   config.addPlugin(fontAwesomePlugin, {
-    transform: false,
     shortcode: 'icon',
+    transform: false,
   });
 
   config.addWatchTarget('src/styles/');
@@ -127,9 +126,9 @@ const eleventyConfig = (config) => {
       input: 'src',
       output: '_site',
     },
-    passthroughFileCopy: true,
-    markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
+    passthroughFileCopy: true,
   };
 };
 
