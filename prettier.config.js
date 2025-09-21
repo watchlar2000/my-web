@@ -5,6 +5,14 @@ const config = {
   tabWidth: 2,
   useTabs: false,
   semi: true,
+  overrides: [
+    {
+      files: '*.njk',
+      options: {
+        parser: 'html',
+      },
+    },
+  ],
 };
 
 export default config;

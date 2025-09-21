@@ -17,7 +17,8 @@ My name's Sergiuzh. I'm a JavaScript developer and I enjoy building things. Alon
 <p>My name's Sergiuzh. I'm a JavaScript developer and I enjoy building things.</p>
 <p>Along with having an elegant taste in design, I craft robust and accessible frontends, and solve backend challenges.</p>
 </div>
-<div class="avatar-image">{% themeImage "src/images/theme/avatar-white.png", "src/images/theme/avatar-black.png", "Sergiusz portrait" %}</div>
+<div class="avatar-image">{% image { alt: 'Sergiusz portrait',
+source: "src/images/theme/avatar-white.png" } %}</div>
 </div>
 
 I've worked with React the most, but I've found myself drawn more to Vue and Svelte for their elegance and developer experience. Also, I've been trying SolidJS. On the backend, I like working with Node.js and Fastify. My toolkit includes TypeScript, PostgreSQL, and various ORMs like DrizzleORM, Objection, and Knex. For styling,
