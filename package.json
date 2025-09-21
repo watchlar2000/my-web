@@ -12,6 +12,11 @@
     "lint:fix": "eslint \"**/*.{js,mjs,cjs,ts,tsx}\" --fix",
     "format": "prettier --write \"**/*.{js,mjs,cjs,ts,tsx,json,md,yml,yaml,css,html,njk}\""
   },
+  "lint-staged": {
+    "*.{js,mjs,cjs,json,md,yml,yaml,css,html,njk}": [
+      "prettier --write"
+    ]
+  },
   "keywords": [],
   "author": "Sergiuzh Kochetov",
   "license": "MIT",
@@ -22,12 +27,8 @@
     "lint-staged": "^16.1.6",
     "prettier": "^3.6.2"
   },
-  "lint-staged": {
-    "*.{js,mjs,cjs,json,md,yml,yaml,css,html,njk}": [
-      "prettier --write"
-    ]
-  },
   "dependencies": {
+    "@11ty/eleventy-img": "^6.0.4",
     "@11ty/font-awesome": "1.0.0-beta.1"
   }
 }
