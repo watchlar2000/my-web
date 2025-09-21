@@ -1,2 +1,2 @@
 const hello = 132;
-console.log(hello);
+console.log(123);
