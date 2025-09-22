@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: 'Home'
+---
+
+<div class="cards-grid">
+  <div class="wrapper | card card-about" data-wrapper-type="inner">
+    <h2 class="text-break | card-title">about</h2>
+    <p class="card-content">
+      Hi there! I'm Sergii - a JavaScript developer who enjoys building things.
+      Along with having an elegant taste in design, I craft robust and
+      accessible frontends, and solve backend challenges.
+    </p>
+    <a href="/about" class="card-link">
+      <span class="visually-hidden">Go to about page to read more</span>
+      {% svg "src/images/icons/arrow-right.svg" %}
+    </a>
+  </div>
+  <div class="wrapper | card card-now" data-wrapper-type="inner">
+    <h2 class="card-title">now</h2>
+    <p class="card-content">See what is happening in my life.</p>
+    <a href="/now" class="card-link">
+      <span class="visually-hidden">Go to now page to read more</span>
+      {% svg "src/images/icons/arrow-right.svg" %}
+    </a>
+  </div>
+  <div class="wrapper | card card-projects" data-wrapper-type="inner">
+    <h2 class="text-break | card-title">projects</h2>
+    <ul role="list" class="flow | projects-list">
+      {% set featuredProjects = collections.project %} {% for project in
+      featuredProjects %} {% if project.data.featured %}
+      <li class="flow-tight | card-content project-item">
+        <a href="{{ project.url }}" class="text-break | project-item__title"
+          >{{ project.data.title }}</a
+        >
+        <p>{{ project.data.description }}</p>
+        <div>
+          <ul role="list" class="cluster | project-item__tags">
+            {% for tag in project.data.tech %} {# {% if forloop.index <= 4 %} #}
+            <li>{{ tag }}</li>
+            {# {% endif %} #} {% endfor %}
+          </ul>
+        </div>
+      </li>
+      {% endif %} {% endfor %}
+    </ul>
+  </div>
+  <div class="flow-tight | card card-decoration">
+    <div>
+      {% themeImage {alt: "Cubes and a duck", lightSource:
+      "src/images/theme/cubes-white.png", darkSource:
+      "src/images/theme/cubes-black.png"} %}
+    </div>
+    <a href="mailto:sergii.koch@gmail.com">Contact me</a>
+  </div>
+</div>

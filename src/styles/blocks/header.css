@@ -1,0 +1,26 @@
+.header {
+  grid-area: header;
+}
+
+.logo {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-color: var(--color-global-text);
+  border-radius: var(--radius-full);
+}
+
+.header-wrapper {
+  --gutter: var(--space-xs);
+
+  padding-top: var(--space-xs);
+}
+
+.header-nav {
+  --cluster-direction: column;
+  --cluster-vertical-alignment: flex-start;
+  --gutter: var(--space-3xs);
+
+  font-size: var(--text-size-meta);
+  font-weight: var(--font-regular);
+}

@@ -1,0 +1,9 @@
+.text-break {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

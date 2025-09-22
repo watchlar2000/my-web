@@ -1,0 +1,5 @@
+{
+  "layout": "partials/project.njk",
+  "tags": ["project"],
+  "permalink": "/projects/{{ title  | slugify }}/"
+}

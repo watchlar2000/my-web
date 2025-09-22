@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: 'Projects'
+---
+
+<div class="flow | detail-page">
+  <div class="cluster | page-header">
+    <a href="/" class="card-link back-button">
+      <span class="visually-hidden">Projects page</span>
+      {% svg "src/images/icons/arrow-right.svg" %}
+    </a>
+    <div class="cluster | page-meta">
+      <p class="path">{{ title }}</p>
+      <p class="updated">Last updated: {{ updated }}</p>
+    </div>
+  </div>
+  <div class="flow prose">{{ content | safe }}</div>
+</div>

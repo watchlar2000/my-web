@@ -1,0 +1,34 @@
+.welcome-grid {
+  display: grid;
+  background-color: var(--color-primary-subtle);
+  padding: var(--space-m);
+  color: var(--color-light);
+  gap: var(--space-l);
+  place-content: center;
+  max-width: var(--size-text-max-width);
+  margin-inline: auto;
+}
+
+.personal-block {
+  font-family: var(--font-display);
+}
+
+.avatar-image {
+  margin-inline: auto;
+  max-width: clamp(8rem, 20vw, 12rem);
+}
+
+.photo-block {
+  max-width: var(--size-text-max-width);
+  margin-inline: auto;
+}
+
+.photo-block img {
+  max-width: clamp(8rem, 20vw, 12rem);
+}
+
+@media (width > 768px) {
+  .photo-block {
+    --cluster-wrap: nowrap;
+  }
+}

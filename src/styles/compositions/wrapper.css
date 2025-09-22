@@ -1,0 +1,21 @@
+.wrapper {
+  --gutter: 1rem;
+
+  margin-inline: auto;
+  max-width: var(--wrapper-max-width, 1360px);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  position: relative;
+}
+
+@media (width > 1024px) {
+  .wrapper {
+    --gutter: var(--space-s-m);
+  }
+}
+
+.wrapper[data-wrapper-type='inner'] {
+  min-width: 100%;
+  padding-block: var(--gutter-wrapper-inner-block, var(--gutter));
+  padding-inline: var(--gutter-wrapper-inner-inline, var(--gutter));
+}
