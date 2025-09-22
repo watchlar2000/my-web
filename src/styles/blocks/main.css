@@ -90,7 +90,7 @@
 .ad-block {
   background-color: var(--color-primary-subtle);
   font-family: var(--font-display);
-  color: var(--color-bg);
+  color: var(--color-text-muted);
   max-width: var(--size-text-max-width);
   min-width: auto;
   border-left: 12px solid var(--color-accent);

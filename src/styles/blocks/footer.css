@@ -17,7 +17,7 @@
 }
 
 .footer-illustration {
-  fill: var(--color-bg-muted);
+  fill: var(--color-bg);
   width: 100%;
   height: auto;
 }

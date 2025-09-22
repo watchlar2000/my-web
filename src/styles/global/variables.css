@@ -43,11 +43,6 @@
   --color-green: oklch(0.72 0.08 135);
   --color-purple: oklch(0.75 0.1 285);
 
-  /* Dark mode */
-  /* --color-dark: oklch(0.97 0.01 264); */
-  /* --color-light: oklch(22.412% 0.0285 268.927); */
-  /* --color-blue: oklch(32.626% 0.08605 285.129); */
-
   /* Color variants */
   --color-bg: var(--color-light);
   --color-bg-subtle: oklch(from var(--color-light) calc(l + 0.02) c h);
@@ -123,4 +118,13 @@
   --radius-full: 9999px;
 
   --wrapper-max-width: 1240px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-dark: oklch(0.97 0.01 264);
+    --color-light: oklch(22.412% 0.0285 268.927);
+    --color-blue: oklch(19.658% 0.08772 279.309);
+    --color-orange: oklch(38.638% 0.11799 41.364);
+  }
 }

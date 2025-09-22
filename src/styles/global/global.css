@@ -94,7 +94,7 @@ ol ::marker {
   text-decoration-thickness: 0.25ex;
 
   &:hover {
-    --color-link-hover: var(--color-primary);
+    --color-link-hover: var(--color-text-muted);
 
     text-decoration-color: var(--color-link-hover);
     color: var(--color-link-hover);

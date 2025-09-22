@@ -178,7 +178,7 @@
 }
 
 .card-link:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-subtle);
   color: var(--color-white);
   transform: scale(1.05);
 }

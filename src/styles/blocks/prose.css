@@ -55,12 +55,6 @@
   --flow-space: var(--space-2xl);
 }
 
-.prose :is(a):active,
-.prose :is(a):focus-visible {
-  text-decoration-color: var(--color-primary);
-  color: var(--color-primary);
-}
-
 .prose img {
   max-height: 100vh;
   width: auto;
