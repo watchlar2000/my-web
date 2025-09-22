@@ -89,6 +89,7 @@ const image = async ({ alt, className = '', sizes = '100vw', source }) => {
 
 const themeImage = async ({
   alt,
+  className = '',
   darkSource,
   lightSource,
   sizes = '100vw',
@@ -109,7 +110,7 @@ const themeImage = async ({
     const darkSources = generateSources(darkFormats, darkImageMapper, sizes);
     const lightSources = generateSources(lightFormats, lightImageMapper, sizes);
 
-    return createPictureElement('', `${darkSources}\n${lightSources}`, {
+    return createPictureElement(className, `${darkSources}\n${lightSources}`, {
       alt,
       height: highSource.height,
       src: lowSource.url,
