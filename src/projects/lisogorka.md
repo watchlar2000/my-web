@@ -1,80 +1,73 @@
 ---
 title: 'Lisogorka'
-description: 'A modern mountain cabin booking platform with real-time availability and interactive trail maps'
-order: 2
+description: 'Iryna Lisogor personal website.'
+order: 1
 featured: true
 tags: project
-tech:
-  [
-    'SvelteKit',
-    'TypeScript',
-    'Supabase',
-    'Postgres',
-    'DrizzleORM',
-    'Zod',
-    'CSS',
-    'Fluid-typography',
-  ]
+tech: ['SvelteKit', 'TypeScript', 'Supabase', 'Postgres', 'DrizzleORM']
 github: 'https://github.com/watchlar2000/lisogorka'
-demo: 'www.irynalisogor.com '
+demo: 'https://www.irynalisogor.com'
 year: '2025'
+created: Sep 22, 2025
+updated: Sep 22, 2025
 ---
 
-# Lisogorka
+{% image {alt: "lisogorka website main page", source: "src/images/projects/lisogorka/2025-09-22_20-57.png"} %}
 
-Lisogorka is a comprehensive booking platform for mountain cabins and outdoor experiences in the Carpathian Mountains. The project combines modern web technologies with intuitive design to help adventurers discover and book unique mountain retreats.
+"Lisogorka" is a personal portfolio website of [Iryna Lisogor](https://www.instagram.com/iryna_lisogor/) - a visual designer and illustrator. She needed a digital space to showcase her creative work while maintaining full control over content management.
 
-## The Challenge
+Live preview - [https://www.irynalisogor.com](https://www.irynalisogor.com)
 
-Mountain cabin owners struggled with fragmented booking systems, while travelers had difficulty finding authentic mountain experiences with reliable availability information. Most existing platforms were either too generic or lacked the specialized features needed for mountain accommodations.
+### The Challenge
 
-## Solution & Features
+Creating a personal web "space" for artists involves the following:
 
-**Real-time Booking System**
-Built a dynamic availability calendar with instant confirmation and automated booking management. Cabin owners can update availability, pricing, and amenities in real-time through an intuitive dashboard.
+- showcasing work in the desired way,
+- ensuring easy content management for non-technical users,
+- keeping fast performance,
+- and providing admin capabilities for portfolio updates.
 
-**Interactive Trail Maps**
-Integrated Mapbox GL to display hiking trails, difficulty levels, and points of interest around each cabin. Users can explore trails, check elevation profiles, and plan their mountain adventures directly from the platform.
+The challenge was to build a solution that would be both visually appealing for visitors and practically manageable for daily use.
 
-**Weather Integration**
-Real-time weather forecasts and mountain conditions help guests plan their stays. The system provides alerts for severe weather and suggests alternative dates when conditions aren't ideal.
+### Solution & Features
 
-**Mobile-First Design**
-Responsive design ensures seamless experience across devices, crucial for travelers planning trips on mobile devices or checking information while on trails.
+**Content Management System** - Custom admin dashboard allows Iryna to easily add, edit, and organize her portfolio pieces. It supports rich text editing, image uploads, and project categorization.
 
-## Technical Implementation
+<p>
+{% image {alt: "lisogorka website main page", source: "src/images/projects/lisogorka/2025-09-22_21-06.png"} %}
+</p>
+<p>
+{% image {alt: "lisogorka website main page", source: "src/images/projects/lisogorka/2025-09-22_21-09.png"} %}
+</p>
+
+**Performance-First Architecture** - SvelteKit brings optimal loading speeds and SEO resulting in perfect PageSpeed Insights score.
+
+**Responsive Design System** - Developed a fluid typography system and responsive layouts using CUBE CSS methodology.
+
+**Secure Authentication** - Integrated OAuth-based authentication through Supabase for secure admin access.
+
+### Technical Implementation
 
 **Frontend Architecture**
-Built with Next.js 14 using the App Router for optimal performance and SEO. TypeScript ensures type safety across the codebase, while Tailwind CSS provides consistent, responsive styling.
+
+Built with SvelteKit leveraging its App Router for optimal performance, SEO, and developer experience. TypeScript provides comprehensive type safety across the entire codebase, while vanilla CSS with fluid typography creates a maintainable and performant styling system.
 
 **Backend & Database**
-Leveraged Supabase for real-time database operations, authentication, and file storage. Row-level security policies protect user data while enabling real-time updates for booking availability.
 
-**Performance Optimizations**
+Integrated Supabase for PostgreSQL database management and authentication, with DrizzleORM providing type-safe database queries. Cloudinary handles image optimization and delivery.
 
-- Image optimization for cabin photos using Next.js Image component
-- Route-based code splitting for faster page loads
-- Cached weather and map data to reduce API calls
-- Progressive web app features for offline trail map access
+### Key Metrics & Impact
 
-## Key Metrics & Impact
+- **100/100 Performance Score** [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-www-irynalisogor-com/tud04bra5g?form_factor=desktop)
+- **Mobile-first responsive design** with consistent experience across devices
+- **Seamless admin experience**
 
-- **50+ cabin listings** across 3 mountain regions
-- **200+ successful bookings** in first 6 months
-- **4.8/5 average rating** from users
-- **40% increase** in direct bookings for partner cabins
-- **Mobile usage: 65%** of total traffic
+### Development Process
 
-## Lessons Learned
+The project began with understanding Iryna's specific needs as a visual artist - prioritizing image quality and ease of content updates. I chose SvelteKit for its great performance characteristics and Supabase for its comprehensive backend-as-a-service structure.
 
-Working with geolocation data and mapping APIs presented unique challenges, especially ensuring accuracy for remote mountain locations. Implementing proper error handling for network connectivity issues in mountain areas was crucial for user experience.
+### Future Enhancements
 
-The project reinforced the importance of user research - initial feedback from mountain guides and frequent hikers shaped key features like offline map capabilities and weather integration.
-
-## Future Enhancements
-
-- Native mobile app development
-- Integration with popular hiking apps like AllTrails
-- AI-powered recommendation system based on user preferences
-- Multi-language support for international visitors
-- Carbon footprint tracking for eco-conscious travelers
+- Enhanced Admin UI
+- Analytics Dashboard - Portfolio engagement metrics
+- Blog Integration
