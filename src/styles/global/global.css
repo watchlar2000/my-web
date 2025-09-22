@@ -5,7 +5,7 @@
 body {
   color: var(--color-global-text);
   background-color: var(--color-global-bg);
-  letter-spacing: var(--kerning-tight);
+  letter-spacing: var(--kerning);
   font-family: var(--font-base);
   font-weight: var(--font-regular);
   overflow-x: hidden;
@@ -32,7 +32,6 @@ body {
 :is(h1, h2, h3, h4) {
   line-height: var(--leading-fine);
   text-wrap: balance;
-  font-family: var(--font-display);
 }
 
 h1 {
@@ -88,7 +87,6 @@ ol ::marker {
 
 :is(nav a) {
   text-decoration: none;
-  font-family: var(--font-display);
 }
 
 :is(a:not(nav a)) {

@@ -5,25 +5,30 @@
   color: var(--color-light);
   gap: var(--space-l);
   place-content: center;
+  max-width: var(--size-text-max-width);
+  margin-inline: auto;
 }
 
-@media (width > 1024px) {
-  .welcome-grid {
-    grid-template-columns: 2fr 1fr;
-  }
-}
-
-.welcome-grid h2 {
-  color: var(--color-light);
-}
-
-.avatar-wrapper {
-  justify-self: center;
-  align-self: center;
+.personal-block {
+  font-family: var(--font-display);
 }
 
 .avatar-image {
-  justify-self: center;
-  align-self: center;
+  margin-inline: auto;
   max-width: clamp(8rem, 20vw, 12rem);
+}
+
+.photo-block {
+  max-width: var(--size-text-max-width);
+  margin-inline: auto;
+}
+
+.photo-block img {
+  max-width: clamp(8rem, 20vw, 12rem);
+}
+
+@media (width > 768px) {
+  .photo-block {
+    --cluster-wrap: nowrap;
+  }
 }

@@ -1,7 +1,15 @@
 .prose {
   --flow-space: var(--space-l);
 
+  width: 100%;
   font-family: var(--font-base);
+  font-size: var(--text-size-lede);
+}
+
+@media (width > 1024px) {
+  .prose {
+    font-size: var(--text-size-meta);
+  }
 }
 
 .prose :is(h1, h2, h3) {
@@ -11,7 +19,7 @@
   color: var(--color-card-heading);
 }
 
-.prose :is(p, li, dl, figcaption, blockquote) {
+.prose :is(p, div, hr, li, dl, figcaption, blockquote) {
   max-width: var(--size-text-max-width);
   text-wrap: pretty;
   margin-inline: auto;
@@ -56,4 +64,9 @@
 .prose img {
   max-height: 100vh;
   width: auto;
+}
+
+.prose-image {
+  max-width: 50%;
+  margin-inline: auto;
 }
