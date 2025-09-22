@@ -7,10 +7,9 @@ title: 'Home'
   <div class="wrapper | card card-about" data-wrapper-type="inner">
     <h2 class="text-break | card-title">about</h2>
     <p class="card-content">
-      <span>Hi there!</span>
-      I'm Sergiusz - an engineer who discovered a passion for web development.
-      I've been freelancing and building projects for a few years now. Ready to
-      make the switch to full-time development...
+      Hi there! I'm Sergii - a JavaScript developer who enjoys building things.
+      Along with having an elegant taste in design, I craft robust and
+      accessible frontends, and solve backend challenges.
     </p>
     <a href="/about" class="card-link">
       <span class="visually-hidden">Go to about page to read more</span>
@@ -34,21 +33,17 @@ title: 'Home'
         <a href="{{ project.url }}" class="text-break | project-item__title"
           >{{ project.data.title }}</a
         >
-        <p>Personal portfolio with secure CMS.</p>
+        <p>{{ project.data.description }}</p>
         <div>
           <ul role="list" class="cluster | project-item__tags">
-            <li>SvelteKit</li>
-            <li>TypeScript</li>
-            <li>Supabase</li>
+            {% for tag in project.data.tech %} {# {% if forloop.index <= 4 %} #}
+            <li>{{ tag }}</li>
+            {# {% endif %} #} {% endfor %}
           </ul>
         </div>
       </li>
       {% endif %} {% endfor %}
     </ul>
-    <a href="/projects" class="card-link">
-      <span class="visually-hidden">Go to projects page to read more</span>
-      {% svg "src/images/icons/arrow-right.svg" %}
-    </a>
   </div>
   <div class="flow-tight | card card-decoration">
     <div>

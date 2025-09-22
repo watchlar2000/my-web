@@ -3,14 +3,25 @@ layout: layouts/base.njk
 ---
 
 <div class="flow | detail-page">
-  <div class="flow prose">
-    <div class="cluster">
-      <a href="/" class="card-link back-button">
-        <span class="visually-hidden">Projects page</span>
-        {% svg "src/images/icons/arrow-right.svg" %}
-      </a>
-      <h2>{{ title }}</h2>
+  <div class="cluster | page-header">
+    <a href="/" class="card-link back-button">
+      <span class="visually-hidden">Projects page</span>
+      {% svg "src/images/icons/arrow-right.svg" %}
+    </a>
+    <div class="cluster | page-meta">
+      <p class="path">{{ title }}</p>
+      <p class="updated">Last updated: {{ updated }}</p>
     </div>
+  </div>
+  <div class="flow prose">
     {{ content | safe }}
+    <hr />
+    <div class="wrapper flow-tight | ad-block" data-wrapper-type="inner">
+      <p>
+        If you are looking for a developer to join your team -
+        <a href="mailto:sergii.koch@gmail.com">contact me</a>
+      </p>
+      <!-- <p>You can check out some of my works <a href="/projects/">here</a>.</p> -->
+    </div>
   </div>
 </div>
