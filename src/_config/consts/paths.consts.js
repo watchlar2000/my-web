@@ -1,4 +1,5 @@
 const PATHS = {
+  assets: 'src/assets',
   images: 'src/images',
   input: 'src',
   output: '_site',
