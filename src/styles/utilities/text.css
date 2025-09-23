@@ -7,3 +7,7 @@
 .text-balance {
   text-wrap: balance;
 }
+
+.font-display {
+  font-family: var(--font-display);
+}

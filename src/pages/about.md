@@ -11,13 +11,20 @@ created: Sep 22, 2025
 ### Hello!
 
 <div class="cluster |  photo-block">
+  <div class="flow-tight">
   <p>
     My name's Sergii and I craft web applications that are fast, accessible, good looking and delightful to use.
   </p>
+
+<a href="/assets/sergii-kochetov-09-23-2025.pdf" download="sergii-kochetov-09-23-2025.pdf" class="button">Download my CV</a>
+
+  </div>
   <div class="photo-block__image avatar-image">
     {% themeImage {alt: "Sergii portrait", lightSource: "src/images/theme/avatar-black.png", darkSource: "src/images/theme/avatar-white.png"} %}
   </div>
 </div>
+
+<p></p>
 
 While I have extensive React experience, I also like working with [Vue](https://vuejs.org/) and [Svelte](https://svelte.dev/) because of their developer experience and performance. I'm also experimenting with [SolidJS](https://www.solidjs.com/).
 

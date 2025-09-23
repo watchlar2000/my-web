@@ -3,7 +3,7 @@ import fontAwesomePlugin from '@11ty/font-awesome';
 import { PATHS, shortcodes, TEMPLATE_ENGINE } from './src/_config/config.js';
 
 const eleventyConfig = (config) => {
-  const { images, input, output, public: public_, styles } = PATHS;
+  const { assets, images, input, output, public: public_, styles } = PATHS;
 
   for (const [name, function_] of Object.entries(shortcodes)) {
     config.addShortcode(name, function_);
@@ -16,6 +16,7 @@ const eleventyConfig = (config) => {
   config.addPassthroughCopy(public_);
   config.addPassthroughCopy(styles);
   config.addPassthroughCopy(images);
+  config.addPassthroughCopy(assets);
 
   config.addPlugin(fontAwesomePlugin, {
     shortcode: 'icon',

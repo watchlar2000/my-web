@@ -18,16 +18,17 @@ github: 'https://github.com/keenethics/mayak'
 demo: 'https://www.mayak.co.ua'
 year: '2024'
 created: Sep 22, 2025
-updated: Sep 22, 2025
+updated: Sep 23, 2025
 ---
 
 {% image {alt: "mayak website main page", source: "src/images/projects/mayak/2025-09-22_21-19.png"} %}
 
 Mayak helps people in Lviv, Ukraine find mental health support. We built a website where locals can search for verified psychologists without paywalls or fake listings.
 
-Live preview - [www.mayak.co.ua](https://www.mayak.co.ua)
-
-Case study - [https://keenethics.com/mayak](https://keenethics.com/mayak)
+<div class="font-display wrapper flow-tight | reference-block" data-wrapper-type="inner">
+  <p><a href="https://www.mayak.co.ua">Live preview</a></p>
+  <p><a href="https://keenethics.com/mayak">Case study from Keenethics</a></p>
+</div>
 
 ### The Challenge
 

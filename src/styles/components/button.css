@@ -1,8 +1,8 @@
 .button {
-  --button-bg: var(--color-global-text);
-  --button-text: var(--color-global-bg);
-  --button-x-padding: 1.5em;
-  --button-y-padding: 0.6em;
+  --button-bg: var(--color-text);
+  --button-text: var(--color-bg);
+  --button-x-padding: 1em;
+  --button-y-padding: 0.2em;
   --button-gutter: 0.5ch;
   --cluster-horizontal-alignment: center;
 
@@ -12,7 +12,7 @@
   line-height: var(--leading);
   position: relative;
   border: none;
-  border-radius: var(--radius-l);
+  /* border-radius: var(--radius-l); */
   cursor: pointer;
   background: var(--button-bg);
   color: var(--button-text);
@@ -20,12 +20,17 @@
   letter-spacing: var(--kerning-uppercase);
   text-decoration: none;
   font-family: var(--font-base);
-  font-size: var(--text-size-base);
   font-weight: var(--font-medium);
   transition:
-    color 0.1s ease-in,
-    background-color 0.1s ease-in,
-    border-color 0.1s ease-in;
+    color 150ms ease-in,
+    background-color 150ms ease-in,
+    border-color 150ms ease-in;
+}
+
+.button:hover {
+  --button-bg: var(--color-primary-subtle);
+
+  color: var(--color-bg-subtle);
 }
 
 .button:disabled {
