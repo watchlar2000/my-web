@@ -1,6 +1,6 @@
 ---
 title: 'Checkly'
-description: 'Create a personal development plan in 2 minutes'
+description: 'Create a personal development plan in no time.'
 order: 2
 featured: true
 tags: project
