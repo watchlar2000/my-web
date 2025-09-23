@@ -22,10 +22,10 @@ Live preview - [https://www.irynalisogor.com](https://www.irynalisogor.com)
 
 Creating a personal web "space" for artists involves the following:
 
-- showcasing work in the desired way,
-- ensuring easy content management for non-technical users,
-- keeping fast performance,
-- and providing admin capabilities for portfolio updates.
+- showcasing work in the desired way
+- ensuring easy content management for non-technical users
+- keeping fast performance
+- and providing admin capabilities for portfolio updates
 
 The challenge was to build a solution that would be both visually appealing for visitors and practically manageable for daily use.
 
@@ -58,7 +58,7 @@ Integrated Supabase for PostgreSQL database management and authentication, with 
 
 ### Key Metrics & Impact
 
-- **100/100 Performance Score** [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-www-irynalisogor-com/tud04bra5g?form_factor=desktop)
+- **100/100 Performance Score** - [PageSpeed Insights](https://pagespeed.web.dev/analysis/https-www-irynalisogor-com/tud04bra5g?form_factor=desktop)
 - **Mobile-first responsive design** with consistent experience across devices
 - **Seamless admin experience**
 
