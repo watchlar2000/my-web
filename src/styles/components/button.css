@@ -31,6 +31,10 @@
   --button-bg: var(--color-primary-subtle);
 
   color: var(--color-bg-subtle);
+
+  @media (prefers-color-scheme: dark) {
+    color: inherit;
+  }
 }
 
 .button:disabled {

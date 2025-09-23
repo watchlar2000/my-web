@@ -95,6 +95,10 @@
   min-width: auto;
   border-left: 12px solid var(--color-accent);
 
+  @media (prefers-color-scheme: dark) {
+    color: inherit;
+  }
+
   &[data-wrapper-type='inner'] {
     min-width: auto;
   }
