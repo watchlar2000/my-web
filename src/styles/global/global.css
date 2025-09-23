@@ -90,11 +90,10 @@ ol ::marker {
 }
 
 :is(a:not(nav a)) {
-  text-underline-offset: 0.15lh;
-  text-decoration-thickness: 0.25ex;
+  text-decoration-thickness: 0.15ex;
 
   &:hover {
-    --color-link-hover: var(--color-text-muted);
+    --color-link-hover: var(--color-text);
 
     text-decoration-color: var(--color-link-hover);
     color: var(--color-link-hover);
