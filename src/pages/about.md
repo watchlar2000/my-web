@@ -12,20 +12,20 @@ created: Sep 22, 2025
 
 <div class="cluster |  photo-block">
   <p>
-  I'm Sergii - a JavaScript developer who enjoys building things. Along with having an elegant taste in design, I craft robust and accessible frontends, and solve backend challenges.
+    My name's Sergii and I craft web applications that are fast, accessible, good looking and delightful to use.
   </p>
   <div class="photo-block__image avatar-image">
-  {% themeImage {alt: "Sergii portrait", lightSource: "src/images/theme/avatar-black.png", darkSource: "src/images/theme/avatar-white.png"} %}
+    {% themeImage {alt: "Sergii portrait", lightSource: "src/images/theme/avatar-black.png", darkSource: "src/images/theme/avatar-white.png"} %}
   </div>
 </div>
 
-I've worked with React the most, but I've found myself drawn more to Vue and Svelte for their elegance and developer experience. Also, I've been trying SolidJS. On the backend, I like working with Node.js and Fastify. As well, my toolkit includes TypeScript, PostgreSQL, and various ORMs like DrizzleORM, Objection, and Knex.
+While I have extensive React experience, I also like working with [Vue](https://vuejs.org/) and [Svelte](https://svelte.dev/) because of their developer experience and performance. I'm also experimenting with [SolidJS](https://www.solidjs.com/).
 
-I'm passionate about modern CSS — CSS Grid and Flexbox, Fluid Typography, PostCSS, and Tailwind CSS. Andy Bell's ["Complete CSS"](https://piccalil.li/complete-css/) course changed my perspective completely. I can't thank him enough. Since I came across his content, it just hits right at the point every time - check out Andy Bell.
+My toolkit includes TypeScript, PostgreSQL, and various ORMs like DrizzleORM, Objection, and Knex. I'm passionate about modern CSS features, Fluid Typography, and Tailwind CSS. Andy Bell's ["Complete CSS"](https://piccalil.li/complete-css/) course changed my perspective completely and made me truly care about both the development process flow and how to utilize CSS effectively.
 
 {% themeImage {className: "prose-image", alt: "", lightSource: "src/images/theme/hand-black.png", darkSource: "src/images/theme/hand-white.png"} %}
 
-Beyond the day-to-day coding, I'm fascinated by functional programming and architectural principles. I'm always looking to expand my horizons though books, podcasts, blogs and courses.
+Beyond day-to-day coding, I'm fascinated by functional programming. I'm always looking to expand my horizons through books, podcasts, blogs and courses.
 
 **Podcast recommendation:** I recently discovered [RWpod](https://www.rwpod.com/) that I wanted to share with you. Even though it's mostly about Ruby, it also showcases new web features and JavaScript-related content.
 
