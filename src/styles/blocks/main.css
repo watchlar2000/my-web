@@ -90,13 +90,18 @@
 .ad-block {
   background-color: var(--color-primary-subtle);
   font-family: var(--font-display);
-  color: var(--color-text-muted);
+  color: var(--color-bg);
   max-width: var(--size-text-max-width);
   min-width: auto;
   border-left: 12px solid var(--color-accent);
 
   &[data-wrapper-type='inner'] {
     min-width: auto;
+  }
+
+  p {
+    max-width: 30ch;
+    margin-left: 0;
   }
 }
 
