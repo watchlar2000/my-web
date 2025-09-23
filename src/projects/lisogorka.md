@@ -9,14 +9,14 @@ github: 'https://github.com/watchlar2000/lisogorka'
 demo: 'https://www.irynalisogor.com'
 year: '2025'
 created: Sep 22, 2025
-updated: Sep 22, 2025
+updated: Sep 23, 2025
 ---
 
 {% image {alt: "lisogorka website main page", source: "src/images/projects/lisogorka/2025-09-22_20-57.png"} %}
 
 "Lisogorka" is a personal portfolio website of [Iryna Lisogor](https://www.instagram.com/iryna_lisogor/) - a visual designer and illustrator. She needed a digital space to showcase her creative work while maintaining full control over content management.
 
-Live preview - [https://www.irynalisogor.com](https://www.irynalisogor.com)
+<div class="font-display wrapper | reference-block" data-wrapper-type="inner"><a href="https://www.irynalisogor.com">Live preview</a></div>
 
 ### The Challenge
 

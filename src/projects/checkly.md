@@ -18,12 +18,14 @@ github: 'https://github.com/BinaryStudioAcademy/bsa-2025-checkly'
 demo: 'http://checkly.eu-north-1.elasticbeanstalk.com/'
 year: '2025'
 created: Sep 22, 2025
-updated: Sep 22, 2025
+updated: Sep 23, 2025
 ---
 
 {% image {alt: "checkly website main page", source: "src/images/projects/checkly/2025-09-22_21-48.png"} %}
 
 Checkly is an AI-powered app that turns your goals into actionable daily plans. Everyone can take a short quiz and get a personalized checklist - whether they want to build better habits, get healthier, or explore creativity.
+
+<div class="font-display wrapper | reference-block" data-wrapper-type="inner"><a href="http://checkly.eu-north-1.elasticbeanstalk.com/">Live preview</a></div>
 
 ### The Problem
 
