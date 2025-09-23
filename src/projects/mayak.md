@@ -25,7 +25,7 @@ updated: Sep 22, 2025
 
 Mayak helps people in Lviv, Ukraine find mental health support. We built a website where locals can search for verified psychologists without paywalls or fake listings.
 
-Live preview - [www.mayak.co.ua](www.mayak.co.ua)
+Live preview - [www.mayak.co.ua](https://www.mayak.co.ua)
 
 Case study - [https://keenethics.com/mayak](https://keenethics.com/mayak)
 
