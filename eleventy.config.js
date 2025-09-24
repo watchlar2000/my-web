@@ -23,9 +23,13 @@ const eleventyConfig = (config) => {
     config.addShortcode(name, function_);
   }
 
-  config.setNunjucksEnvironmentOptions({
+  const nunjucksEnvironment = nunjucks.configure([includes, styles], {
+    autoescape: false,
+    lstripBlocks: true,
     throwOnUndefined: true,
+    trimBlocks: true,
   });
+  config.setLibrary('njk', nunjucksEnvironment);
 
   config.addPassthroughCopy(public_);
   config.addPassthroughCopy(images);
@@ -38,11 +42,6 @@ const eleventyConfig = (config) => {
 
   config.addWatchTarget(styles);
   config.addWatchTarget(images);
-
-  const nunjucksEnvironment = nunjucks.configure([includes, styles], {
-    autoescape: false,
-  });
-  config.setLibrary('njk', nunjucksEnvironment);
 
   config.addNunjucksAsyncFilter('postcss', postcssFilter);
 
