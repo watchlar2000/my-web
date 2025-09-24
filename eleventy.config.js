@@ -1,20 +1,37 @@
 import fontAwesomePlugin from '@11ty/font-awesome';
+import nunjucks from 'nunjucks';
 
-import { PATHS, shortcodes, TEMPLATE_ENGINE } from './src/_config/config.js';
+import {
+  PATHS,
+  postcssFilter,
+  shortcodes,
+  TEMPLATE_ENGINE,
+} from './src/_config/config.js';
 
 const eleventyConfig = (config) => {
-  const { assets, images, input, output, public: public_, styles } = PATHS;
+  const {
+    assets,
+    images,
+    includes,
+    input,
+    output,
+    public: public_,
+    styles,
+  } = PATHS;
 
   for (const [name, function_] of Object.entries(shortcodes)) {
     config.addShortcode(name, function_);
   }
 
-  config.setNunjucksEnvironmentOptions({
+  const nunjucksEnvironment = nunjucks.configure([includes, styles], {
+    autoescape: false,
+    lstripBlocks: true,
     throwOnUndefined: true,
+    trimBlocks: true,
   });
+  config.setLibrary('njk', nunjucksEnvironment);
 
   config.addPassthroughCopy(public_);
-  config.addPassthroughCopy(styles);
   config.addPassthroughCopy(images);
   config.addPassthroughCopy(assets);
 
@@ -25,6 +42,8 @@ const eleventyConfig = (config) => {
 
   config.addWatchTarget(styles);
   config.addWatchTarget(images);
+
+  config.addNunjucksAsyncFilter('postcss', postcssFilter);
 
   return {
     dir: {
