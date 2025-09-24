@@ -5,7 +5,6 @@ const PATHS = {
   input: 'src',
   output: '_site',
   public: 'public',
-  src: 'src',
   styles: 'src/styles',
 };
 

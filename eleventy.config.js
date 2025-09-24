@@ -16,7 +16,6 @@ const eleventyConfig = (config) => {
     input,
     output,
     public: public_,
-    src,
     styles,
   } = PATHS;
 
@@ -40,7 +39,7 @@ const eleventyConfig = (config) => {
   config.addWatchTarget(styles);
   config.addWatchTarget(images);
 
-  const nunjucksEnvironment = nunjucks.configure([includes, styles, src], {
+  const nunjucksEnvironment = nunjucks.configure([includes, styles], {
     autoescape: false,
   });
   config.setLibrary('njk', nunjucksEnvironment);
