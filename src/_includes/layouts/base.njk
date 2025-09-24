@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or "My Site" }}</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title or "watchlar2000" }}</title>
+    <link
+      rel="preload"
+      href="/styles/styles.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="/styles/styles.css" /></noscript>
   </head>
-  <body class="theme-colorful">
+  <body>
     <div class="body-grid">
       {% include "partials/header.njk" %}
-      <main class="main">
-        {{ content | safe }}
-      </main>
-      {% getBundle "fontawesome" %}
-      {% include "partials/footer.njk" %}
+      <main class="main">{{ content | safe }}</main>
+      {% getBundle "fontawesome" %} {% include "partials/footer.njk" %}
     </div>
   </body>
 </html>

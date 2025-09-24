@@ -1,9 +1,18 @@
 ---
 layout: layouts/base.njk
 eleventyExcludeFromCollections: true
+permalink: /404.html
 ---
 
-<div>
-  <h1>404</h1>
-  <p>Page not found.</p>
+<div class="wrapper flow-tight | not-found-container">
+  <div class="cluster">
+    <h1>404</h1>
+    {% themeImage {className: "404-image", alt: "Duck", lightSource:
+    "src/images/theme/duck-black.png", darkSource:
+    "src/images/theme/duck-white.png"} %}
+  </div>
+  <p>
+    Duck couldn't find the page.
+    <a href="/">Go home</a>
+  </p>
 </div>

@@ -1,0 +1,20 @@
+.not-found-container {
+  display: grid;
+  justify-content: center;
+  text-wrap: balance;
+  text-align: center;
+  max-width: 40ch;
+
+  .cluster {
+    margin-inline: auto;
+  }
+
+  img {
+    height: 3lh;
+    width: auto;
+  }
+
+  p {
+    font-size: var(--text-size-meta);
+  }
+}

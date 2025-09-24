@@ -4,7 +4,7 @@ title: 'Home'
 ---
 
 <div class="cards-grid">
-  <div class="wrapper | card card-about" data-wrapper-type="inner">
+  <article class="wrapper | card card-about" data-wrapper-type="inner">
     <h2 class="text-break | card-title">about</h2>
     <p class="card-content">
       Hello! My name's Sergii and I craft web applications that are fast,
@@ -14,16 +14,16 @@ title: 'Home'
       <span class="visually-hidden">Go to about page to read more</span>
       {% svg "src/images/icons/arrow-right.svg" %}
     </a>
-  </div>
-  <div class="wrapper | card card-now" data-wrapper-type="inner">
+  </article>
+  <article class="wrapper | card card-now" data-wrapper-type="inner">
     <h2 class="card-title">now</h2>
     <p class="card-content">See what is happening in my life.</p>
     <a href="/now" class="card-link">
       <span class="visually-hidden">Go to now page to read more</span>
       {% svg "src/images/icons/arrow-right.svg" %}
     </a>
-  </div>
-  <div class="wrapper | card card-projects" data-wrapper-type="inner">
+  </article>
+  <article class="wrapper | card card-projects" data-wrapper-type="inner">
     <h2 class="text-break | card-title">projects</h2>
     <ul role="list" class="flow | projects-list">
       {% set featuredProjects = collections.project %} {% for project in
@@ -43,7 +43,7 @@ title: 'Home'
       </li>
       {% endif %} {% endfor %}
     </ul>
-  </div>
+  </article>
   <div class="flow-tight | card card-decoration">
     <div>
       {% image {alt: "Cubes and a duck", source:

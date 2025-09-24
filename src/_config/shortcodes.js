@@ -47,6 +47,8 @@ const createPictureElement = (
         width="${width}"
         height="${height}"
         alt="${alt}"
+        loading="lazy"
+        decoding="async"
       />
     </picture>`;
 
@@ -59,7 +61,10 @@ const svg = (path, className = '') => {
     const svgContent = fs.readFileSync(path, 'utf8');
 
     if (className) {
-      return svgContent.replace('<svg', `<svg class="${className}"`);
+      return svgContent.replace(
+        '<svg',
+        `<svg aria-hidden="true" class="${className}"`,
+      );
     }
 
     return svgContent;
