@@ -4,6 +4,7 @@ title: 'About Me'
 permalink: /about/
 updated: Sep 22, 2025
 created: Sep 22, 2025
+description: Learn about my life and web development.
 ---
 
 <!-- <div class="flow hide-desktop-up"> -->
