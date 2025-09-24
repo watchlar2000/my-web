@@ -47,6 +47,8 @@ const createPictureElement = (
         width="${width}"
         height="${height}"
         alt="${alt}"
+        loading="lazy"
+        decoding="async"
       />
     </picture>`;
 

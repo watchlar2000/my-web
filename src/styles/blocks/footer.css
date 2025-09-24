@@ -34,7 +34,6 @@
 }
 
 .footer-socials__item {
-  color: var(--color-footer-socials-text);
   text-decoration: none;
   position: relative;
   transition: color 200ms ease;
@@ -65,7 +64,7 @@
 
 .footer-meta {
   text-align: right;
-  color: var(--color-primary-light);
+  color: var(--color-text-muted);
 }
 
 .footer-nav {
@@ -73,7 +72,7 @@
   --cluster-vertical-alignment: flex-end;
   --gutter: var(--space-2xs);
 
-  color: var(--color-text-muted);
+  font-size: var(--text-size-lede);
 }
 
 @media (width > 420px) {
