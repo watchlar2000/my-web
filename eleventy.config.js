@@ -32,7 +32,6 @@ const eleventyConfig = (config) => {
   config.setLibrary('njk', nunjucksEnvironment);
 
   config.addPassthroughCopy(public_);
-  config.addPassthroughCopy(images);
   config.addPassthroughCopy(assets);
 
   config.addPlugin(fontAwesomePlugin, {
