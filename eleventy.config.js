@@ -27,7 +27,6 @@ const eleventyConfig = (config) => {
     autoescape: false,
     lstripBlocks: true,
     throwOnUndefined: true,
-    trimBlocks: true,
   });
   config.setLibrary('njk', nunjucksEnvironment);
 
