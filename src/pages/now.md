@@ -4,6 +4,7 @@ title: 'Now'
 permalink: /now/
 updated: Sep 22, 2025
 created: Sep 22, 2025
+description: Now page tells what is going on in my life now.
 ---
 
 <div class="wrapper flow | reference-block" data-wrapper-type="inner">
