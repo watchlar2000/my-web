@@ -1,5 +1,5 @@
-@import url('./global/global.css');
-@import url('./compositions/compositions.css');
-@import url('./blocks/blocks.css');
-@import url('./utilities/utilities.css');
-@import url('./components/components.css');
+@import './global/global.css';
+@import './compositions/compositions.css';
+@import './blocks/blocks.css';
+@import './utilities/utilities.css';
+@import './components/components.css';
