@@ -1,12 +1,24 @@
 <header class="header">
   <div class="cluster | header-wrapper">
     <a href="/" class="logo">
-      <span class="visually-hidden">Logo</span>
+      <span class="visually-hidden">watchlar2000 website logo</span>
     </a>
-    <nav class="cluster | header-nav">
-      <a href="/about/">about</a>
-      {# <a href="/projects/">projects</a> #}
-      <a href="/now/">now</a>
+    <nav class="cluster | header-nav" aria-label="Main navigation">
+      <a
+        href="/about/"
+        aria-current="{% if page.url == '/about' %}page{% endif %}"
+        >about</a
+      >
+      {#
+      <a
+        href="/projects/"
+        aria-current="{% if page.url == '/projects' %}page{% endif %}"
+        >projects</a
+      >
+      #}
+      <a href="/now/" aria-current="{% if page.url == '/now' %}page{% endif %}"
+        >now</a
+      >
     </nav>
   </div>
 </header>
