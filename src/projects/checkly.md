@@ -18,7 +18,7 @@ github: 'https://github.com/BinaryStudioAcademy/bsa-2025-checkly'
 demo: 'http://checkly.eu-north-1.elasticbeanstalk.com/'
 year: '2025'
 created: Sep 22, 2025
-updated: Sep 23, 2025
+updated: Sep 26, 2025
 ---
 
 {% image {alt: "checkly website main page", source: "src/images/projects/checkly/2025-09-22_21-48.png"} %}
@@ -53,11 +53,9 @@ Pick your focus area, take the quick quiz, and watch as AI creates your personal
 
 ### Technical Implementation
 
-**Frontend Architecture**
-Built with modern web technologies for a smooth, responsive experience across all devices. The interface uses vibrant colors and smooth animations to keep users engaged and motivated.
+**Frontend Architecture** - Built with modern web technologies for a smooth, responsive experience across all devices. The interface uses vibrant colors and smooth animations to keep users engaged and motivated. [Figma design](https://www.figma.com/design/oHvA6oH7M9zDIs29gj2Sy2/Checkly_BSA-2025?node-id=0-1&p=f&t=XhVMxO8xw0H6Q7H9-0).
 
-**Backend & AI**
-Fastify backend with TypeScript handles the AI logic and plan generation. AWS S3 manages PDF storage and delivery. Comprehensive testing with Playwright ensures reliability across different user scenarios.
+**Backend & AI** - Fastify backend with TypeScript handles the AI logic and plan generation. AWS S3 manages PDF storage and delivery. Comprehensive testing with Playwright ensures reliability across different user scenarios.
 
 **Key Features**
 

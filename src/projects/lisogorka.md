@@ -48,13 +48,9 @@ The challenge was to build a solution that would be both visually appealing for 
 
 ### Technical Implementation
 
-**Frontend Architecture**
+**Frontend Architecture** - Built with SvelteKit leveraging its App Router for optimal performance, SEO, and developer experience. TypeScript provides comprehensive type safety across the entire codebase, while vanilla CSS with fluid typography creates a maintainable and performant styling system.
 
-Built with SvelteKit leveraging its App Router for optimal performance, SEO, and developer experience. TypeScript provides comprehensive type safety across the entire codebase, while vanilla CSS with fluid typography creates a maintainable and performant styling system.
-
-**Backend & Database**
-
-Integrated Supabase for PostgreSQL database management and authentication, with DrizzleORM providing type-safe database queries. Cloudinary handles image optimization and delivery.
+**Backend & Database** - Integrated Supabase for PostgreSQL database management and authentication, with DrizzleORM providing type-safe database queries. Cloudinary handles image optimization and delivery.
 
 ### Key Metrics & Impact
 

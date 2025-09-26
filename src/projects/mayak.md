@@ -12,13 +12,13 @@ tech:
     'React-admin',
     'TailwindCSS',
     'PrismaORM',
-    'Laflet',
+    'Leaflet',
   ]
 github: 'https://github.com/keenethics/mayak'
 demo: 'https://www.mayak.co.ua'
 year: '2024'
 created: Sep 22, 2025
-updated: Sep 23, 2025
+updated: Sep 26, 2025
 ---
 
 {% image {alt: "mayak website main page", source: "src/images/projects/mayak/2025-09-22_21-19.png"} %}
@@ -46,11 +46,9 @@ Existing platforms had problems - some cost money, others listed unqualified peo
 
 ### Technical Implementation
 
-**Frontend Architecture**
-Built with SvelteKit leveraging its App Router for optimal performance, SEO, and developer experience. TypeScript provides comprehensive type safety across the entire codebase, while vanilla CSS with fluid typography creates a maintainable and performant styling system.
+**Frontend Architecture** - Built with NextJS 14 using App Router for server-side rendering. The component architecture follows a modular pattern with reusable UI components styled using TailwindCSS. Leaflet powers the interactive map functionality, providing real-time visualization of therapist locations.
 
-**Backend & Database**
-PostgreSQL database with Prisma ORM handles all the profiles and user data. Next.js API routes manage the backend logic. React Query was used for efficient data fetching and React Admin for easy content management
+**Backend & Database** - PostgreSQL database with Prisma ORM handles all the data. Next.js API routes manage the backend logic. React Query was used for efficient data fetching and React Admin for easy content management.
 
 ### Key Features
 
