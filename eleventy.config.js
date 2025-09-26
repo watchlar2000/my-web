@@ -38,7 +38,6 @@ const eleventyConfig = (config) => {
     transform: false,
   });
 
-  config.addWatchTarget(styles);
   config.addWatchTarget(images);
 
   config.addNunjucksAsyncFilter('postcss', postcssFilter);
