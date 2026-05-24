@@ -2,7 +2,7 @@
 layout: partials/detail-page.njk
 title: 'About Me'
 permalink: /about/
-updated: Sep 22, 2025
+updated: May 24, 2026
 created: Sep 22, 2025
 description: Learn about my life and web development.
 ---
@@ -17,7 +17,7 @@ description: Learn about my life and web development.
     My name's Sergii and I craft web applications that are fast, accessible, good looking and delightful to use.
   </p>
 
-<a href="/assets/sergii-kochetov-09-23-2025.pdf" download="sergii-kochetov-09-23-2025.pdf" class="button">Download my CV</a>
+<a href="/assets/sergii-kochetov-cv.pdf" download="sergii-kochetov-cv.pdf" class="button">Download my CV</a>
 
   </div>
   <div class="photo-block__image avatar-image">
@@ -27,16 +27,14 @@ description: Learn about my life and web development.
 
 <p></p>
 
-While I have extensive React experience, I also like working with [Vue](https://vuejs.org/) and [Svelte](https://svelte.dev/) because of their developer experience and performance. I'm also experimenting with [SolidJS](https://www.solidjs.com/).
+I'm a full-stack developer with a wide range of interests across the JavaScript ecosystem — from frontend frameworks and modern CSS to backend architecture and database design. I care deeply about code quality, developer experience, and building things that are both maintainable and a pleasure to use.
 
-My toolkit includes TypeScript, PostgreSQL, and various ORMs like DrizzleORM, Objection, and Knex. I'm passionate about modern CSS features, Fluid Typography, and Tailwind CSS. Andy Bell's ["Complete CSS"](https://piccalil.li/complete-css/) course changed my perspective completely and made me truly care about both the development process flow and how to utilize CSS effectively.
+My toolkit spans the full stack, and I'm always looking to expand it. Andy Bell's ["Complete CSS"](https://piccalil.li/complete-css/) course changed my perspective completely and made me truly care about how to utilize CSS effectively.
 
 {% themeImage {className: "prose-image", alt: "", lightSource: "src/images/theme/hand-black.png", darkSource: "src/images/theme/hand-white.png"} %}
 
-Beyond day-to-day coding, I'm fascinated by functional programming. I'm always looking to expand my horizons through books, podcasts, blogs and courses.
-
-**Podcast recommendation:** I recently discovered [RWpod](https://www.rwpod.com/) that I wanted to share with you. Even though it's mostly about Ruby, it also showcases new web features and JavaScript-related content.
+Beyond day-to-day coding, I'm fascinated by functional programming and software architecture. I'm always expanding my horizons through books, podcasts, blogs, and courses.
 
 {% themeImage {className: "prose-image", alt: "", lightSource: "src/images/theme/bike-black.png", darkSource: "src/images/theme/bike-white.png"} %}
 
-When I'm not coding, you'll find me riding my bicycle, brewing coffee (shoutout to [Radiokava](https://www.radiokava.com.ua/) — my favorite roastery), playing PlayStation games, or staying active with CrossFit and running, my latest sporting obsession.
+When I'm not coding, you'll find me out on my gravel bike, brewing coffee (shoutout to [Radiokava](https://www.radiokava.com.ua/) — my favorite roastery), or playing PlayStation games.
