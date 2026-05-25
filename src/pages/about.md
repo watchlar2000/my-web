@@ -17,7 +17,7 @@ description: Learn about my life and web development.
     My name's Sergii and I craft web applications that are fast, accessible, good looking and delightful to use.
   </p>
 
-<a href="/assets/sergii-kochetov-cv.pdf" download="sergii-kochetov-cv.pdf" class="button">Download my CV</a>
+<a href="/assets/sergii_kochetov_cv.pdf" download="sergii_kochetov_cv.pdf" class="button">Download my CV</a>
 
   </div>
   <div class="photo-block__image avatar-image">
@@ -28,8 +28,6 @@ description: Learn about my life and web development.
 <p></p>
 
 I'm a full-stack developer with a wide range of interests across the JavaScript ecosystem — from frontend frameworks and modern CSS to backend architecture and database design. I care deeply about code quality, developer experience, and building things that are both maintainable and a pleasure to use.
-
-My toolkit spans the full stack, and I'm always looking to expand it. Andy Bell's ["Complete CSS"](https://piccalil.li/complete-css/) course changed my perspective completely and made me truly care about how to utilize CSS effectively.
 
 {% themeImage {className: "prose-image", alt: "", lightSource: "src/images/theme/hand-black.png", darkSource: "src/images/theme/hand-white.png"} %}
 
